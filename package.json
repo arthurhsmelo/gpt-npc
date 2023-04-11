@@ -1,0 +1,20 @@
+{
+  "name": "gpt-npc",
+  "version": "1.0.0",
+  "description": "A library to create and manage AI powered NPCs on a given environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "gpt",
+    "npcs",
+    "ai",
+    "gamedevelopment"
+  ],
+  "author": "Arthur Melo",
+  "license": "ISC",
+  "dependencies": {
+    "openai": "^3.2.1"
+  }
+}
