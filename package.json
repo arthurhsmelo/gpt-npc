@@ -4,7 +4,19 @@
   "description": "A library to create and manage AI powered NPCs on a given environment",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ignore-path .gitignore",
+    "prettier": "prettier --write",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "npm run prettier",
+      "npm run lint:fix",
+      "git add ."
+    ]
   },
   "keywords": [
     "gpt",
@@ -16,5 +28,18 @@
   "license": "ISC",
   "dependencies": {
     "openai": "^3.2.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "eslint": "^8.38.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
+    "prettier": "^2.8.7",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.4"
   }
 }
