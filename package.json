@@ -27,11 +27,14 @@
   "author": "Arthur Melo",
   "license": "ISC",
   "dependencies": {
+    "lodash.clonedeep": "^4.5.0",
     "openai": "^3.2.1"
   },
   "type": "module",
   "devDependencies": {
     "@types/jest": "^29.5.0",
+    "@types/lodash": "^4.14.192",
+    "@types/lodash.clonedeep": "^4.5.7",
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
